@@ -115,6 +115,8 @@ public class UserDao implements IuserDao {
 		statement.setString(6, korisnik.getUsername());
 		statement.setString(7, korisnik.getPassword());
 		statement.setInt(8, korisnik.getId());
+		
+		statement.executeUpdate();
 
 	}
 

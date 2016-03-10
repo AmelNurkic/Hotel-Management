@@ -117,6 +117,7 @@ public class UserDao implements IuserDao {
 		statement.setInt(8, korisnik.getId());
 		
 		statement.executeUpdate();
+		con.close();
 
 	}
 

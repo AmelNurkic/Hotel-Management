@@ -22,6 +22,30 @@ public abstract class User {
 		this.godine = godine;
 	}
 	
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public void setIme(String ime) {
+		this.ime = ime;
+	}
+
+	public void setPrezime(String prezime) {
+		this.prezime = prezime;
+	}
+
+	public void setGodine(byte godine) {
+		this.godine = godine;
+	}
+
 	public int getId(){
 		return id;
 	}
@@ -44,11 +68,5 @@ public abstract class User {
 	public byte getGodine() {
 		return godine;
 	}
-	
-	
-	
-	
-	
-	
 	
 }

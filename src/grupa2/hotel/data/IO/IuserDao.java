@@ -14,13 +14,9 @@ import java.util.Set;
 public interface IuserDao {
 
 	public <T> void dodajKorisnika(T korisnik)     throws SQLException;
-	public User getKorisnik(int id)                throws SQLException;
+	public User getKorisnik(Korisnik korisnik)     throws SQLException;
 	public Set<User> getSviKorisnici()             throws SQLException;
 	public void updateKorisnik(Korisnik korisnik)  throws SQLException;
 	public void izbrisiKorisnika(int id)           throws SQLException;
 	
 }
-
-
-
-

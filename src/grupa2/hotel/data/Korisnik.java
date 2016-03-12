@@ -56,6 +56,23 @@ public class Korisnik extends User{
 	public void setBrojLicne(String brojLicne) {
 		this.brojLicne = brojLicne;
 	}
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("| Korisnik ");
+		builder.append(super.getIme());
+		builder.append("| prezime : ");
+		builder.append(super.getPrezime());
+		builder.append("| datum Dolaska : ");
+		builder.append(datumDolaska);
+		builder.append("| datum Odlaska : ");
+		builder.append(datumOdlaska);
+		builder.append(", broj Licne : ");
+		builder.append(brojLicne);
+		
+		return builder.toString();
+	}
 	
 	
 	
